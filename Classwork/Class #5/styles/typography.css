@@ -2,4 +2,18 @@
 
 p {
 	font-family: "Roboto", sans-serif;
+	letter-spacing:1.1px;
+	line-height: 25px;
+	background-color: antiquewhite;
+	font-variant: bold;
+	font-weight:
+	font-style:
+}
+
+p::first-letter {
+	font-size:40px;
+}
+
+p::first-line {
+	background-color:yellow;
 }
