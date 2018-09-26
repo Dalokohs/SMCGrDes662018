@@ -1,0 +1,55 @@
+main {
+	width: 900px;
+	margin: 0px auto;
+	background-color: chartreuse;
+}
+
+.fullcard {
+	width: 45%;
+
+}
+
+.fullcard img {
+	width: 100%;
+}
+
+.fullcard:first-child {
+	float:left;
+}
+
+.fullcard:nth-child(2) {
+	float: right;
+}
+
+.clearfix {
+	clearfix: both;
+}
+
+.fullcard3column: {
+	display: inline-block;
+}
+
+.threecolumn {
+	width: 33%;
+	display: inline-block;
+}
+
+.header {
+	background-color: violet;
+	font-size: 24px;
+}
+
+.twocolumn {
+	display: inline-block;
+}
+
+.pheader {
+		font-weight: bold;
+		font-size: 24px;
+		background-color: violet;
+}
+
+.ptwocolumn {
+	text-align: center;
+	width: 100%;
+}
