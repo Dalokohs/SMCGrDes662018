@@ -6,8 +6,20 @@
 
 @media (max-width:768px) {
 
-	.logo {
-		width:140px; height:auto;
+.logo {
+		width:180px; height:auto;
 	}
+
+li {
+	font-family: 'Mukta-Regular';
+	font-size: 20px;
+}
+
+nav {
+	background-color: #e8e8e8;
+	display: inline-block;
+	width:100%;
+}
+
 
 }
