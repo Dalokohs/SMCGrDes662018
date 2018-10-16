@@ -89,9 +89,43 @@ figcaption {
 
 /* Blog Page CSS Mobile */
 
+.blog-entry {
+	width: 95%;
+	margin-left: 0%;
+	border-width: 0px;
+}
 
+.blog-holder {
+	display:inline-block;
+	margin-left: 0%;
+	margin-right: 0%;
+	width: 105%;
+	border-style: solid;
+	border-color: #e8e8e8;
+	border-width: 4px;
+}
+
+
+.blog-header {
+	width: 75%;
+	text-align: center;
+	color: #e8e8e8;
+	font-size: 22px;
+
+}
+
+#blog-bodycopy {
+	background-color: #e8e8e8;
+	font-family: 'Mukla-Light';
+	width:70%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
 
 
 /* Blog Page CSS Mobile */
-
-}

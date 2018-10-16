@@ -6,6 +6,7 @@ nav {
 	margin-left:auto;
 	margin-right:auto;
 	text-align: right;
+	height: 30%;
 
 }
 
@@ -71,3 +72,44 @@ figcaption {
 
 /* Blog Page CSS Desktop */
 
+.blog-containers {
+	padding-top:1%;
+}
+
+.blog-entry {
+	width: 100%;
+	height: auto;
+	border-style: solid;
+}
+
+.blog-holder {
+	display: inline-block;
+	width: 19.1%;
+	margin-left: 10%;
+	border-style: solid;
+	border-color: #e8e8e8;
+	border-width: 7px;
+}
+
+.blog-header {
+	width: 100%;
+	text-align: center;
+	color: #e8e8e8;
+	font-size: 22px;
+
+}
+
+#blog-bodycopy {
+	background-color: #e8e8e8;
+	font-family: 'Mukla-Light';
+	width:82%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-right: 9%;
+	padding-left: 9%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+
+}
+/* Blog Page CSS Desktop */
