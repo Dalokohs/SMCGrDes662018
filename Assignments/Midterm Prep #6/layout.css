@@ -1,3 +1,5 @@
+/* Home Page CSS Desktop */
+
 nav {
 	background-color: #e8e8e8;
 	width: 80%;
@@ -48,3 +50,24 @@ figcaption {
 	width: 98.5%;
 
 }
+
+/* Home Page CSS Desktop */
+
+
+/* About Page CSS Desktop */
+
+#portraitmobile {
+	width: 20%;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+#portraitresize {
+	width: 100%;
+}
+
+/* About Page CSS Desktop */
+
+/* Blog Page CSS Desktop */
+

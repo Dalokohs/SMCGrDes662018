@@ -32,6 +32,29 @@ figcaption {
 	font-size: 20px;
 }
 
+#aboutheader {
+	font-family: 'Rubik-Bold';
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #e8e8e8;
+	font-size: 250%;
+
+}
+
+#bodycopy {
+	background-color: #e8e8e8;
+	font-family: 'Mukla-Light';
+	width:60%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-right: 9%;
+	padding-left: 9%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+}
+
 a {
 
 }
