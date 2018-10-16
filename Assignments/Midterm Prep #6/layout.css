@@ -17,11 +17,34 @@ body {
 }
 
 .example {
-	width: 35%;
-	height: 25%;
-	margin-left: 10%;
+	width: 100%;
+	height: auto;
+
 }
 
 .img-holder {
-	display:inline;
+	display: inline-block;
+	width: 35%;
+	height: auto;
+	margin-left: 10%;
+	max-width: 50%;
+	padding-bottom: 5%;
+	padding-top: 2%;
+}
+
+figcaption {
+	width: 100%;
+	text-align: center;
+	color: #e8e8e8;
+	font-size: 22px;
+
+}
+
+.gridcontainers {
+	width: 100%;
+}
+
+#example2 {
+	width: 98.5%;
+
 }

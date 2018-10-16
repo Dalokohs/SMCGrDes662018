@@ -12,8 +12,8 @@
 	}
 
 li {
-	font-family: 'Mukta-Regular';
-	font-size: 20px;
+	font-family: 'Rubik-Medium';
+	font-size: 19px;
 }
 
 nav {
@@ -24,15 +24,26 @@ nav {
 }
 
 .example {
-	width: 70%;
-	height: 50%;
-	margin-left: 0%
+	width: 95%;
+	margin-left: 0%;
 }
 
 .img-holder {
-	display:inline;
+	display:inline-block;
+	margin-left: 0%;
+	margin-right: 0%;
+	width: 49%;
 }
 
+
+figcaption {
+	width:80%;
+	text-align: center;
+	color: #e8e8e8;
+	margin-left: 10%;
+	font-size: 15px;
+
+}
 
 
 }
