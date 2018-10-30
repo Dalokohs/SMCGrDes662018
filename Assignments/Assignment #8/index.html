@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<title> Page Title </title>
+	<meta name="viewport" content="width-device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+
+<body>
+
+
+<div class="button-container">
+	<button onclick="changeMyText()">Change Text</button>
+	<button onclick="changeMyColor()">Change Color</button>
+	<button onclick="changeMySize()">Change Size</button>
+	<button onclick="changeMyFont()">Change Font</button>
+</div>
+
+
+	<h1 id="docHeader">Goodbye, Sky</h1>
+	<script>
+		
+		var docHeader = document.getElementById("docHeader");
+		var MyTextSize = docHeader.style.fontSize + "100px";
+
+		var changeMyText = function(){
+
+		var MyText = "Hello, World!";
+		docHeader.innerHTML = MyText;
+	}
+
+		var changeMyColor = function(){
+		
+		var red = Math.random()*255;
+		var blue = Math.random()*255;
+		var green = Math.random()*255;
+
+		var RGBval = "rgb(" + red + ", " + green + ", " + blue +")";
+		docHeader.style.color = RGBval;
+	}
+
+	var changeMySize = function(){
+	
+	docHeader.style.fontSize = Math.random()*200 + "px";
+
+	}	
+
+	var changeMyFont = function(){
+
+	docHeader.style.fontFamily = "Impact,Charcoal,sans-serif";
+
+	}
+
+		docHeader.innerHTML = MyText;
+	//	docHeader.style.fontSize = MyTextSize + "100px";
+		docHeader.style.color = RGBval;  //"rgb(200, 0, 255)
+	</script>	
+
+
+</body>
+</html>
