@@ -31,11 +31,11 @@
     <button onclick="revertColor()" id="hideButton">Revert Color to Blue!</button>
   </div>
 
-  <img src="images/Kitty.jpg" id="image-script">
+  <img src="images/Kitty.jpg" id="imageScript">
 
-   <div class="button-container">
-    <button onclick="changeimageSize()" id="showButton">Change Size!</button>
-    <button onclick="revertimageSize()" id="hideButton">Revert to Original Size!</button>
+  <div class="button-container">
+    <button onclick="changeimageSize()" id="changeButton">Change Size!</button>
+    <button onclick="revertimageSize()" id="revertButton">Revert to Original Size!</button>
   </div>
 
 
@@ -44,12 +44,14 @@
   <script>
     var header = document.getElementById("docHeader");
     
-    var image = document.getElementById("imagescript");
+    var image = document.getElementById("imageScript");
 
     function changeColor(){
       document.getElementById("message").innerText = "";
       document.getElementById("hideButton").removeAttribute("disabled");
-      if(header.style.color === "#0000FF"){
+
+      console.log(header.style.color);
+      if(header.style.color === "rgb(255, 0, 0)"){
         document.getElementById("showButton").setAttribute("disabled", "disabled");
         document.getElementById("message").innerText = "The header is already blue!";
       }
@@ -66,11 +68,9 @@
     }
 
     function changeimageSize(){
+      console.log(image.style.width);
 
-    	
-
-      imagescript.style.width = "700";
-      imagescript.style.height = "700";
+      image.style.width = "700px";
 
     }
 
