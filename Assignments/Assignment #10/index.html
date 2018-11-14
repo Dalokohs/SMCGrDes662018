@@ -44,20 +44,20 @@
   <p id="message"></p>
 
   <script>
-    var header = $("docHeader");
+    var header = $("#docHeader");
     
-    var image = $("imageScript");
+    var image = $("#imageScript");
 
     function changeColor(){
+      header.css("color", "rgb(255, 0, 0)");
       $("message").innerText = "";
       $("hideButton").removeAttr("disabled");
 
-     console.log(header.css("color"));
+     console.log(header.attr("color"));
       if(header.css("color") === "rgb(255, 0, 0)"){
         $("showButton").setAttribute("disabled", "disabled");
         $("message").innerText = "The header is already blue!";
       }
-      header.css("color", "rgb(255, 0, 0)");
     }
     function revertColor(){
       $("message").innerText = "";
