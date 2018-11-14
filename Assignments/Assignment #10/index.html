@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+  <style>
+    #message {
+      color: red;
+    }
+
+    #docHeader {
+      color: #0000FF;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 id="docHeader">Hello, World!</h1>
+  
+  <div class="button-container">
+    <button onclick="changeColor()" id="showButton">Change Color!</button>
+    <button onclick="revertColor()" id="hideButton">Revert Color to Blue!</button>
+  </div>
+
+  <img src="images/Kitty.jpg" id="imageScript">
+
+  <div class="button-container">
+    <button onclick="changeimageSize()" id="changeButton">Change Size!</button>
+    <button onclick="revertimageSize()" id="revertButton">Revert to Original Size!</button>
+  </div>
+
+
+  <p id="message"></p>
+
+  <script>
+    var header = $("docHeader");
+    
+    var image = $("imageScript");
+
+    function changeColor(){
+      $("message").innerText = "";
+      $("hideButton").removeAttr("disabled");
+
+     console.log(header.css("color"));
+      if(header.css("color") === "rgb(255, 0, 0)"){
+        $("showButton").setAttribute("disabled", "disabled");
+        $("message").innerText = "The header is already blue!";
+      }
+      header.css("color", "rgb(255, 0, 0)");
+    }
+    function revertColor(){
+      $("message").innerText = "";
+      $("showButton").removeAttribute("disabled");
+      if(header.style.color === "#FF0000"){
+        $("hideButton").setAttribute("disabled", "disabled");
+        $("message").innerText = "The header is already red!";
+      }
+      header.style.color = "#0000FF";
+    }
+
+    function changeimageSize(){
+      console.log(image.style.width);
+
+      image.style.width = "700px";
+
+    }
+
+    function revertimageSize(){
+
+
+
+      imagescript.style.Size = "474px"
+      
+    }
+  
+  </script>
+</body>
+</html>
