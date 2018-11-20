@@ -1,0 +1,85 @@
+/* Desktop CSS */
+
+#bodycopydesktop1 {
+	font-size: 14px;
+	background-color: #FF6666;
+	position: fixed; right:900px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 15px;
+
+}
+
+#bodycopydesktop2 {
+	font-size: 14px;
+	background-color: #FF6666;
+	position: fixed; left:900px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 15px;
+
+}
+
+
+
+
+
+/* Desktop CSS */
+
+
+@media (min-width:768px) {
+
+
+#header {
+	background-color: #FF0000;
+	font-family: 'Spicy Rice', cursive;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: -50px;
+	text-align: center;
+	font-size: 60px;
+
+}
+
+#subheader {
+	background-color: #FF3232;
+	font-family: 'Allerta Stencil', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: -30px;
+}
+
+
+
+#bodycopy {
+	background-color: #FF6666; 
+	font-family: 'Montserrat', sans-serif;
+}
+
+#bodycopy1 {
+	font-size: 18px;
+	background-color: #FF6666;
+	position: fixed; left:400px;
+	margin-left: 110px;
+	margin-right: 110px;
+	padding: 15px;
+
+}
+
+p:before {
+    content: ' \039b';
+}
+
+#bodycopy2 {
+	font-size: 18px;
+	background-color: #FF6666;
+	position: fixed; right:400px;
+	margin-left: 110px;
+	margin-right: 110px;
+	padding: 15px;
+
+}
+
+}
