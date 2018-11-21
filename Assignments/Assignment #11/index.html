@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="style.css" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
@@ -18,18 +18,18 @@
 <body>
 
     <div class="button-container">
-        <button id="imgToggle">Remove Tapir</button>
+        <button id="imgToggleTapir">Remove Tapir</button>
 
     </div>
 
     <h2>This is a Tapir.</h1>
 
-    <div class="img-container">
+    <div id="img-containerTapir">
         <img src="images//tapir.jpg" alt="Tapir" class="page-img">
     </div>
 
     <div class="button-container">
-        <button id="imgToggle">Remove Tasmanian Devil</button>
+        <button id="imgToggleDevil">Remove Tasmanian Devil</button>
 
     </div>
 
@@ -41,7 +41,7 @@
 
 
     <div class="button-container">
-        <button id="imgToggle">Remove Wombat</button>
+        <button id="imgToggleWombat">Remove Wombat</button>
 
     </div>
 
@@ -52,7 +52,7 @@
     </div>
 
     <div class="button-container">
-        <button id="imgToggle">Remove Platypus</button>
+        <button id="imgTogglePlatypus">Remove Platypus</button>
 
     </div>
 
@@ -63,7 +63,7 @@
     </div>
 
     <div class="button-container">
-        <button id="imgToggle">Remove Piranha</button>
+        <button id="imgTogglePiranha">Remove Piranha</button>
 
     </div>
 
@@ -74,7 +74,7 @@
     </div>
 
     <div class="button-container">
-        <button id="imgToggle">Remove Octopus</button>
+        <button id="imgToggleOctopus">Remove Octopus</button>
 
     </div>
 
@@ -85,7 +85,7 @@
     </div>
 
     <div class="button-container">
-        <button id="imgToggle">Remove Mantis Shrimp</button>
+        <button id="imgToggleShrimp">Remove Mantis Shrimp</button>
 
     <h2>This is a Mantis Shrimp.</h1>
 
@@ -94,7 +94,7 @@
     </div>
 
     <div class="button-container">
-        <button id="imgToggle">Remove Axolotl</button>
+        <button id="imgToggleAxolotl">Remove Axolotl</button>
 
     </div>
 
@@ -105,7 +105,7 @@
     </div>
 
     <div class="button-container">
-        <button id="imgToggle">Remove Saiga Antelope</button>
+        <button id="imgToggleAntelope">Remove Saiga Antelope</button>
 
     </div>
 
@@ -121,12 +121,13 @@
 
     <script>
         $(document).ready(function(){
-            $('#imgToggle').click(function(){
+            $('#imgToggleTapir').click(function(){
                 imageToggle();
             });
-            $('#imgSwitch').click(function(){
+            $('#imgSwitchTapir').click(function(){
                 imageSwitch();
            
+
 
 
 
@@ -146,10 +147,10 @@
                 $('.img-container').toggle();
                 // see https://api.jquery.com/css/
                 if($('.img-container').css('display') === 'none'){
-                    $('#imgToggle').text("Add Tapir");
+                    $('#imgToggleTapir').text("Add Tapir");
                 }
                 else {
-                    $('#imgToggle').text("Remove Tapir");
+                    $('#imgToggleTapir').text("Remove Tapir");
                 }
 
 

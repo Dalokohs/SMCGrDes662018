@@ -1,11 +1,25 @@
-header{
+header {
 	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #A083B0;
 }
 
 
-body{
+body { 
 	margin: auto;
-	width: 50%;
+	width: 40%;
 	padding: auto;
+	background-color: #A083B0;
 
+}
+
+button {
+	padding: 1%;
+	margin-top: 5%;
+	font-size: 15px;
+}
+
+img {
+	width: 85%;
 }
