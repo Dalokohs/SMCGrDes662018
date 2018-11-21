@@ -1,0 +1,168 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="style.css" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<header>
+
+<p> Weird Animal Gallery </p>
+    
+</header>
+
+
+<body>
+
+    <div class="button-container">
+        <button id="imgToggle">Remove Tapir</button>
+
+    </div>
+
+    <h2>This is a Tapir.</h1>
+
+    <div class="img-container">
+        <img src="images//tapir.jpg" alt="Tapir" class="page-img">
+    </div>
+
+    <div class="button-container">
+        <button id="imgToggle">Remove Tasmanian Devil</button>
+
+    </div>
+
+    <h2>This is a Tasmanian Devil.</h1>
+
+    <div class="img-container">
+        <img src="images//tasmaniandevil.jpg" alt="Tasmanian Devil" class="page-img">
+    </div>
+
+
+    <div class="button-container">
+        <button id="imgToggle">Remove Wombat</button>
+
+    </div>
+
+    <h2>This is a Wombat.</h1>
+
+    <div class="img-container">
+        <img src="images//Wombat.jpg" alt="Wombat" class="page-img">
+    </div>
+
+    <div class="button-container">
+        <button id="imgToggle">Remove Platypus</button>
+
+    </div>
+
+    <h2>This is a Platypus.</h1>
+
+    <div class="img-container">
+        <img src="images//Platypus.jpg" alt="Platypus" class="page-img">
+    </div>
+
+    <div class="button-container">
+        <button id="imgToggle">Remove Piranha</button>
+
+    </div>
+
+    <h2>This is a Piranha.</h1>
+
+    <div class="img-container">
+        <img src="images//Piranha.jpeg" alt="Piranha" class="page-img">
+    </div>
+
+    <div class="button-container">
+        <button id="imgToggle">Remove Octopus</button>
+
+    </div>
+
+    <h2>This is an Octopus.</h1>
+
+    <div class="img-container">
+        <img src="images//Octopus.jpg" alt="Octopus" class="page-img">
+    </div>
+
+    <div class="button-container">
+        <button id="imgToggle">Remove Mantis Shrimp</button>
+
+    <h2>This is a Mantis Shrimp.</h1>
+
+    <div class="img-container">
+        <img src="images//mantisshrimp.jpg" alt="Mantis Shrimp" class="page-img">
+    </div>
+
+    <div class="button-container">
+        <button id="imgToggle">Remove Axolotl</button>
+
+    </div>
+
+    <h2>This is a Axolotl.</h1>
+
+    <div class="img-container">
+        <img src="images//axolotl.jpg" alt="Axolotl" class="page-img">
+    </div>
+
+    <div class="button-container">
+        <button id="imgToggle">Remove Saiga Antelope</button>
+
+    </div>
+
+    <h2>This is a Saiga Antelope.</h1>
+
+    <div class="img-container">
+        <img src="images//antelope.jpg" alt="Saiga Antelope" class="page-img">
+    </div>    
+
+
+
+
+
+    <script>
+        $(document).ready(function(){
+            $('#imgToggle').click(function(){
+                imageToggle();
+            });
+            $('#imgSwitch').click(function(){
+                imageSwitch();
+           
+
+
+
+
+
+
+
+
+
+
+
+
+            });
+
+            var imageToggle = function(){
+                // see https://api.jquery.com/toggle-event/
+                $('.img-container').toggle();
+                // see https://api.jquery.com/css/
+                if($('.img-container').css('display') === 'none'){
+                    $('#imgToggle').text("Add Tapir");
+                }
+                else {
+                    $('#imgToggle').text("Remove Tapir");
+                }
+
+
+
+
+
+
+
+
+
+            }
+        });
+    </script>
+    
+</body>
+</html>
