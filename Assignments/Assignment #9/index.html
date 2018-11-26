@@ -2,9 +2,9 @@
 <html>
 <head>
 
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE-edge">
-	<html>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <html>
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,11 +16,9 @@
     #message {
       color: red;
     }
-
     #docHeader {
-    	color: #0000FF;
+      color: #0000FF;
     }
-
   </style>
 </head>
 <body>
@@ -38,6 +36,23 @@
     <button onclick="revertimageSize()" id="revertButton">Revert to Original Size!</button>
   </div>
 
+  <div id="H1">
+    <h1> Hey Young World, the World is yours. </h1>
+  </div>
+
+
+  <div class="button-container">
+    <button onclick="changeHeaderSize()" id="changeButton">Change Font Size!</button>
+    <button onclick="revertHeaderSize()" id="revertButton">Revert to Original Size!</button>
+  </div>
+
+  <img src="images/Rick.png" id="Rick">
+
+  <div class="button-container">
+    <button onclick="Rick()" id="showRick">Hide Slick!</button>
+  </div>
+
+
 
   <p id="message"></p>
 
@@ -46,10 +61,11 @@
     
     var image = document.getElementById("imageScript");
 
+    var H1 = document.getElementById("H1");
+
     function changeColor(){
       document.getElementById("message").innerText = "";
       document.getElementById("hideButton").removeAttribute("disabled");
-
       console.log(header.style.color);
       if(header.style.color === "rgb(255, 0, 0)"){
         document.getElementById("showButton").setAttribute("disabled", "disabled");
@@ -66,21 +82,42 @@
       }
       header.style.color = "#0000FF";
     }
-
     function changeimageSize(){
-      console.log(image.style.width);
-
       image.style.width = "700px";
-
     }
-
     function revertimageSize(){
-
-
-
-      imagescript.style.Size = "474px"
-    	
+      image.style.width = "474px"
+      
     }
+
+    function changeHeaderSize(){
+      H1.style.fontSize = "xx-large";
+    }
+
+    function revertHeaderSize(){
+      H1.style.fontSize = "medium";
+    }
+
+    function Rick() {
+    var Rick = document.getElementById("Rick");
+    if (Rick.style.display === "none") {
+        Rick.style.display = "block";
+    } else {
+        Rick.style.display = "none";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
   
   </script>
 </body>
