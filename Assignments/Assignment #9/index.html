@@ -60,16 +60,14 @@
     var header = document.getElementById("docHeader");
     
     var image = document.getElementById("imageScript");
-
     var H1 = document.getElementById("H1");
-
     function changeColor(){
       document.getElementById("message").innerText = "";
       document.getElementById("hideButton").removeAttribute("disabled");
       console.log(header.style.color);
       if(header.style.color === "rgb(255, 0, 0)"){
         document.getElementById("showButton").setAttribute("disabled", "disabled");
-        document.getElementById("message").innerText = "The header is already blue!";
+        document.getElementById("message").innerText = "The header is already red!";
       }
       header.style.color = "#FF0000";
     }
@@ -89,15 +87,12 @@
       image.style.width = "474px"
       
     }
-
     function changeHeaderSize(){
       H1.style.fontSize = "xx-large";
     }
-
     function revertHeaderSize(){
       H1.style.fontSize = "medium";
     }
-
     function Rick() {
     var Rick = document.getElementById("Rick");
     if (Rick.style.display === "none") {
@@ -106,18 +101,6 @@
         Rick.style.display = "none";
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
   
   </script>
 </body>

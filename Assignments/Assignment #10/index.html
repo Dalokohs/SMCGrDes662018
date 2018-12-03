@@ -40,6 +40,23 @@
     <button onclick="revertimageSize()" id="revertButton">Revert to Original Size!</button>
   </div>
 
+   <div id="H1">
+    <h1> Hey Young World, the World is yours. </h1>
+  </div>
+
+
+  <div class="button-container">
+    <button onclick="changeHeaderSize()" id="changeButton">Change Font Size!</button>
+    <button onclick="revertHeaderSize()" id="revertButton">Revert to Original Size!</button>
+  </div>
+
+
+  <img src="images/Rick.png" id="Rick">
+
+  <div class="button-container">
+    <button onclick="rickTheRuler()" id="showRick">Hide Slick!</button>
+  </div>
+
 
   <p id="message"></p>
 
@@ -48,41 +65,63 @@
     
     var image = $("#imageScript");
 
+    var H1 = $("#H1");
+
+    var Rick = $("#Rick");
+
+
     function changeColor(){
       header.css("color", "rgb(255, 0, 0)");
       $("message").innerText = "";
-      $("hideButton").removeAttr("disabled");
+      $("hideButton").attr("disabled","disabled");
 
-     console.log(header.attr("color"));
       if(header.css("color") === "rgb(255, 0, 0)"){
-        $("showButton").setAttribute("disabled", "disabled");
+        $("showButton").attr("disabled", "disabled");
         $("message").innerText = "The header is already blue!";
       }
     }
     function revertColor(){
+      header.css("color", "rgb(0, 0, 255)");
       $("message").innerText = "";
-      $("showButton").removeAttribute("disabled");
+      $("showButton").attr("disabled","disabled");
       if(header.style.color === "#FF0000"){
-        $("hideButton").setAttribute("disabled", "disabled");
+        $("hideButton").attr("disabled", "disabled");
         $("message").innerText = "The header is already red!";
       }
-      header.style.color = "#0000FF";
     }
 
     function changeimageSize(){
-      console.log(image.style.width);
 
-      image.style.width = "700px";
+      $("#imageScript").width(700)
 
     }
 
     function revertimageSize(){
 
-
-
-      imagescript.style.Size = "474px"
+      $("#imageScript").width(474)
       
     }
+
+    function changeHeaderSize(){
+      $("#H1").css("font-size", "28px");
+    }
+    
+    function revertHeaderSize(){
+      $("#H1").css("font-size", "16px");
+
+    }
+      
+    function rickTheRuler(){
+    $("#Rick").toggle();
+
+    }
+
+
+    
+
+
+
+
   
   </script>
 </body>
