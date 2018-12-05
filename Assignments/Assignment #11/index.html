@@ -1,168 +1,196 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
-
-<header>
-
-<p> Weird Animal Gallery </p>
-    
-</header>
-
-
 <body>
 
-    <div class="button-container">
-        <button id="imgToggleTapir">Remove Tapir</button>
+<header>Weird Animal Gallery</header>
 
-    </div>
-
-    <h2>This is a Tapir.</h1>
-
-    <div id="img-containerTapir">
-        <img src="images//tapir.jpg" alt="Tapir" class="page-img">
-    </div>
 
     <div class="button-container">
-        <button id="imgToggleDevil">Remove Tasmanian Devil</button>
-
+        <button onclick="showTapir()">Show Tapir</button>
+        <button onclick="hideTapir()">Hide Tapir</button>
     </div>
 
-    <h2>This is a Tasmanian Devil.</h1>
+    <h1>This is a Tapir!</h1>
 
     <div class="img-container">
-        <img src="images//tasmaniandevil.jpg" alt="Tasmanian Devil" class="page-img">
-    </div>
-
-
-    <div class="button-container">
-        <button id="imgToggleWombat">Remove Wombat</button>
-
-    </div>
-
-    <h2>This is a Wombat.</h1>
-
-    <div class="img-container">
-        <img src="images//Wombat.jpg" alt="Wombat" class="page-img">
+        <img id="tapir" src="images/tapir.jpg">
     </div>
 
     <div class="button-container">
-        <button id="imgTogglePlatypus">Remove Platypus</button>
-
+        <button onclick="showDevil()">Show Devil</button>
+        <button onclick="hideDevil()">Hide Devil</button>
     </div>
 
-    <h2>This is a Platypus.</h1>
+    <h1>This is a Tasmanian Devil!</h1>
 
     <div class="img-container">
-        <img src="images//Platypus.jpg" alt="Platypus" class="page-img">
+        <img id="devil" src="images/tasmaniandevil.jpg">
     </div>
 
     <div class="button-container">
-        <button id="imgTogglePiranha">Remove Piranha</button>
-
+        <button onclick="showWombat()">Show Wombat</button>
+        <button onclick="hideWombat()">Hide Wombat</button>
     </div>
 
-    <h2>This is a Piranha.</h1>
+    <h1>This is a Wombat!</h1>
 
     <div class="img-container">
-        <img src="images//Piranha.jpeg" alt="Piranha" class="page-img">
+        <img id="wombat" src="images/Wombat.jpg">
     </div>
 
     <div class="button-container">
-        <button id="imgToggleOctopus">Remove Octopus</button>
-
+        <button onclick="showPlatypus()">Show Platypus</button>
+        <button onclick="hidePlatypus()">Hide Platypus</button>
     </div>
 
-    <h2>This is an Octopus.</h1>
+    <h1>This is a Platypus!</h1>
 
     <div class="img-container">
-        <img src="images//Octopus.jpg" alt="Octopus" class="page-img">
+        <img id="platypus" src="images/Platypus.jpg">
+    </div>
+
+     <div class="button-container">
+        <button onclick="showPiranha()">Show Piranha</button>
+        <button onclick="hidePiranha()">Hide Piranha</button>
+    </div>
+
+    <h1>This is a Piranha!</h1>
+
+    <div class="img-container">
+        <img id="piranha" src="images/Piranha.jpeg">
     </div>
 
     <div class="button-container">
-        <button id="imgToggleShrimp">Remove Mantis Shrimp</button>
+        <button onclick="showOctopus()">Show Octopus</button>
+        <button onclick="hideOctopus()">Hide Octopus</button>
+    </div>
 
-    <h2>This is a Mantis Shrimp.</h1>
+    <h1>This is an Octopus!</h1>
 
     <div class="img-container">
-        <img src="images//mantisshrimp.jpg" alt="Mantis Shrimp" class="page-img">
+        <img id="octopus" src="images/Octopus.jpg">
     </div>
 
     <div class="button-container">
-        <button id="imgToggleAxolotl">Remove Axolotl</button>
-
+        <button onclick="showMantisShrimp()">Show Shrimp</button>
+        <button onclick="hideMantisShrimp()">Hide Shrimp</button>
     </div>
 
-    <h2>This is a Axolotl.</h1>
+    <h1>This is a Mantis Shrimp!</h1>
 
     <div class="img-container">
-        <img src="images//axolotl.jpg" alt="Axolotl" class="page-img">
+        <img id="shrimp" src="images/mantisshrimp.jpg">
     </div>
 
     <div class="button-container">
-        <button id="imgToggleAntelope">Remove Saiga Antelope</button>
-
+        <button onclick="showAxolotl()">Show Axolotl</button>
+        <button onclick="hideAxolotl()">Hide Axolotl</button>
     </div>
 
-    <h2>This is a Saiga Antelope.</h1>
+    <h1>This is a Axolotl!</h1>
 
     <div class="img-container">
-        <img src="images//antelope.jpg" alt="Saiga Antelope" class="page-img">
-    </div>    
+        <img id="axolotl" src="images/axolotl.jpg">
+    </div>
 
+    <div class="button-container">
+        <button onclick="showAntelope()">Show Antelope</button>
+        <button onclick="hideAntelope()">Hide Antelope</button>
+    </div>
 
+    <h1>This is a Saiga Antelope!</h1>
+
+    <div class="img-container">
+        <img id="antelope" src="images/antelope.jpg">
+    </div>
 
 
 
     <script>
-        $(document).ready(function(){
-            $('#imgToggleTapir').click(function(){
-                imageToggle();
-            });
-            $('#imgSwitchTapir').click(function(){
-                imageSwitch();
-           
 
+     function showTapir(){
+        $("#tapir").show();
+     }
 
+     function hideTapir(){
+        $("#tapir").hide();
+     }
 
+    function showDevil(){
+        $("#devil").show();
+     }
 
+     function hideDevil(){
+        $("#devil").hide();
+     }
 
+    function showWombat(){
+        $("#wombat").show();
+     }
 
+     function hideWombat(){
+        $("#wombat").hide();
+     }
 
+    function showPlatypus(){
+        $("#platypus").show();
+     }
 
+     function hidePlatypus(){
+        $("#platypus").hide();
+     }
 
+    function showPiranha(){
+        $("#piranha").show();
+     }
 
+     function hidePiranha(){
+        $("#piranha").hide();
+     }
 
+    function showOctopus(){
+        $("#octopus").show();
+     }
 
+     function hideOctopus(){
+        $("#octopus").hide();
+     } 
 
-            });
+     function showMantisShrimp(){
+        $("#shrimp").show();
+     }
 
-            var imageToggle = function(){
-                // see https://api.jquery.com/toggle-event/
-                $('.img-container').toggle();
-                // see https://api.jquery.com/css/
-                if($('.img-container').css('display') === 'none'){
-                    $('#imgToggleTapir').text("Add Tapir");
-                }
-                else {
-                    $('#imgToggleTapir').text("Remove Tapir");
-                }
+     function hideMantisShrimp(){
+        $("#shrimp").hide();
+     }
 
+     function showAxolotl(){
+        $("#axolotl").show();
+     }
 
+     function hideAxolotl(){
+        $("#axolotl").hide();
+     }
 
+    function showAntelope(){
+        $("#antelope").show();
+     }
 
+     function hideAntelope(){
+        $("#antelope").hide();
+     }                
+                
 
+            
 
-
-
-
-            }
-        });
     </script>
     
 </body>
