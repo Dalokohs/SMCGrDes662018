@@ -122,8 +122,8 @@
 
 #missionstatement {
   background-color: #778899;
-  width: 100%;
-  margin-left: 15%;
+  width: 70%;
+  margin-left: 30%;
   padding: 0.5%;
 
 }
@@ -166,7 +166,6 @@ footer {
   font-size:16px;
   padding: 25px;
   width:10%;
-  display: inline-block;
 }
 
 iframe {
@@ -180,7 +179,7 @@ iframe {
 
 #rightfloat {
   float:right;
-  width:50%;
+  width: 44.5%;
 }
 
 #wrapper {
