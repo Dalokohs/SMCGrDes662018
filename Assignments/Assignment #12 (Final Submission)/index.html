@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>The Surf Bus Foundation </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheet.css"/>
+  <script src="jquery-3.3.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald|Patua+One" rel="stylesheet">
+
+</head>
+
+    <nav>
+      
+      <div class="topnav">
+      <div id="logo"> <img src="images/logo.png">
+	  <a href="index.html" class="active">Home</a>
+	  <a href="events.html">Events</a>
+	  <a href="donations.html">Donate</a>
+	  <a href="about.html">About</a>
+	</div>
+	</div>
+
+
+    </nav>
+
+
+<body>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="images/surf1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/surf2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/surf3.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+	<script>
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1} 
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none"; 
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block"; 
+		  dots[slideIndex-1].className += " active";
+		}
+
+	</script>
+
+	<div id="wrapper">
+
+	<div id="leftfloat">
+
+	<header id="missionstatement">
+		<p id="homeheader">"Making a Real Change."</p>
+
+		<p id="mission"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra tristique neque in molestie. Nulla ligula ex, semper vitae orci at, hendrerit efficitur nisi. Morbi et vestibulum felis. Donec elit nisi, tincidunt ut sapien at, vestibulum fringilla lacus. Proin imperdiet porta nulla eu egestas. Integer condimentum euismod nulla, vitae volutpat nunc tempor vitae. Suspendisse orci ipsum, convallis vitae pulvinar sed, convallis a nisi. Curabitur scelerisque sem non dolor imperdiet placerat. Aliquam pretium nulla diam, at molestie ligula tempor vel. Aliquam erat volutpat.
+
+		Duis sit amet quam interdum sapien blandit euismod in quis tellus. Mauris blandit volutpat orci, vitae imperdiet turpis vestibulum vel. Integer aliquam egestas commodo. Nam eu sapien lectus. Vivamus id orci elit. Donec ac scelerisque elit. Nulla volutpat placerat lorem, ut maximus orci tristique id. Sed porta urna vitae lacinia luctus. Sed volutpat venenatis lacinia. Suspendisse in libero fermentum, iaculis massa et, cursus ipsum. Etiam at dictum ante, non faucibus purus. Nulla ac tempus mauris, id pharetra enim. Morbi eget bibendum dolor. Vestibulum tempor massa id sem rhoncus, ut venenatis magna convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+		</p>
+</header>
+
+	</div>
+
+<div id="rightfloat">
+
+<div id="donation">
+<button class="donatebutton"> 
+Donate
+</button>
+
+<button class="donatebutton">
+Volunteer
+</button>
+</div>
+
+<iframe class="videoWrapper" width="400" height="400"
+src="https://www.youtube.com/embed/JQ8zpDBkf60">
+</iframe>
+
+</div>
+
+</div>
+
+<footer>
+
+<div id="copyright">
+<p>© Surf Bus Foundation 20XX</p>
+</div>
+
+<div id="socialmedia">
+<a href="www.facebook.com"> <img src="images/facebook.png"></a>
+<a href="www.instagram.com/?hl=en"><img src="images/insta.png"></a>
+</div>
+
+</footer>
+
+</body>
+
+
+</html>
