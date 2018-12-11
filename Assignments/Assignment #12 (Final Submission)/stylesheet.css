@@ -186,6 +186,47 @@ iframe {
   display: inline-block;
 }
 
+/* About Page Desktop CSS */
+
+.aboutheader {
+  font-family: 'Patua One', cursive;
+  font-size: 45px;
+  margin-left: 5%;
+}
+
+.aboutcontent {
+  background-color: #010133;
+  color: #FFFFFF;
+  padding: 2%;
+  margin: 5%;
+  font-size: 18px;
+}
+
+.aboutinsideheader {
+  font-family: 'Patua One', cursive;
+  font-size: 35px;
+  text-align: center;
+}
+
+#aboutfounder {
+  margin-left:45%;
+}
+
+#aboutsurf {
+  margin-left:40%;
+
+}
+
+/* About Page Desktop CSS */
+
+
+
+
+
+
+
+
+
 /* Desktop CSS */
 
 
@@ -423,6 +464,38 @@ iframe {
   width: 100%;
 
 }
+
+
+/* About Page Mobile CSS */
+
+.aboutheader {
+  font-family: 'Patua One', cursive;
+  font-size: 30px;
+
+}
+
+.aboutcontent {
+  background-color: #010133;
+  color: #FFFFFF;
+  padding: 5%;
+}
+
+.aboutinsideheader {
+  font-family: 'Patua One', cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
+#aboutfounder {
+  margin-left:20%;
+}
+
+#aboutsurf {
+  margin: 0%;
+}
+
+/* About Page Mobile CSS */
+
 
 
 }
