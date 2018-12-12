@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>The Surf Bus Foundation </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheet.css"/>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald|Patua+One" rel="stylesheet">
+
+</head>
+
+    <nav>
+      
+      <div class="topnav">
+      <div id="logo"> <img src="images/logo.png">
+	  <a href="index.html" class="active">Home</a>
+	  <a href="events.html">Events</a>
+	  <a href="donations.html">Donate</a>
+	  <a href="about.html">About</a>
+	</div>
+	</div>
+
+
+    </nav>
+
+    <body>
+
+          <div id="donationform">
+            First name:<br>
+            <input type="text" name="firstname">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname">
+            <br>
+            Donation Amount:<br>
+            <input type="text" name="donationamount" value="$">
+            <br>
+            Card Number:<br>
+            <input type="text" name="ccnumber">
+            <br><br>
+            <button onclick="donationSubmit()">Submit</button>
+          </div>
+
+          <div id="donationmessage">
+
+          <h1 class="aboutheader">
+
+            Thank You For Your Support!
+
+          </h1 class="aboutheader">
+        </div>
+
+
+      <script>
+        function donationSubmit(){
+        $("#donationform").toggle();
+        $("#donationmessage").show();
+      }
+
+      $("#donationmessage").hide();
+
+      </script>
+
+
+
+
+    </body>
+
+
+<footer>
+
+<div id="copyright">
+<p>© Surf Bus Foundation 20XX</p>
+</div>
+
+<div id="socialmedia">
+<a href="www.facebook.com"> <img src="images/facebook.png"></a>
+<a href="www.instagram.com/?hl=en"><img src="images/insta.png"></a>
+</div>
+
+</footer>
+
+
+
+</html>
